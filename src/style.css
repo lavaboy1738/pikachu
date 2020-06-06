@@ -14,7 +14,6 @@ body{
     height: 500px;
     top: calc(50% - 250px);
     left: calc(50% - 250px);
-    border: 2px solid black;
 }
 
 .nose{
@@ -99,7 +98,7 @@ body{
 .upperlip-left{
     width: 80px;
     height: 22px;
-    border: 3px solid black;
+    border: 4px solid black;
     position: absolute;
     border-radius: 0 0 0 20px;
     border-top: none;
@@ -112,7 +111,7 @@ body{
 .upperlip-right{
     width: 80px;
     height: 22px;
-    border: 3px solid black;
+    border: 4px solid black;
     position: absolute;
     border-radius: 0 0 20px 0;
     border-top: none;
@@ -132,10 +131,10 @@ body{
 
 .lowerlip-dark{
     width: 160px;
-    height: 800px;
-    border: 3px solid black;
+    height: 700px;
+    border: 4px solid black;
     border-radius: 50%;
-    background-color: #9b000a;
+    background-color: #aa1e29;
     overflow: hidden;
     position: relative;
 }
@@ -146,6 +145,33 @@ body{
     left: calc(50% - 125px);
     width: 250px;
     height: 300px;
-    background-color: #ff458f;
+    background-color: #f15560;
     border-radius: 50%;
+}
+
+.leftCheek, .rightCheek{
+    width: 100px;
+    height: 100px;
+    background-color: #ee3823;
+    border-radius: 50%;
+    border: 4px solid black;
+    position: absolute;
+    top: 40%;
+}
+
+.leftCheek{
+    left: 5%;
+}
+
+.rightCheek{
+    right: 5%;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
 }
