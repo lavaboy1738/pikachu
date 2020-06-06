@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #ffe600;
+}
+
 .background{
     position: absolute;
     width: 500px;
@@ -68,3 +72,80 @@
     background-color: white;
 }
 
+.mouth{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: calc(50% - 100px);
+    top: 40%;
+    overflow: hidden;
+}
+
+.mouth::before{
+    content: "";
+    position: absolute;
+    background-color: #ffe600;
+    width: 200px;
+    height: 8px;
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+}
+
+.upperlip{
+
+}
+
+.upperlip-left{
+    width: 80px;
+    height: 22px;
+    border: 3px solid black;
+    position: absolute;
+    border-radius: 0 0 0 20px;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-15deg);
+    left: 20px;
+    background-color: #ffe600;
+}
+
+.upperlip-right{
+    width: 80px;
+    height: 22px;
+    border: 3px solid black;
+    position: absolute;
+    border-radius: 0 0 20px 0;
+    border-top: none;
+    border-left: none;
+    transform: rotate(15deg);
+    right: 18px;
+    background-color: #ffe600;
+}
+
+.lowerlip{
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 80px);
+    z-index: -1;
+}
+
+.lowerlip-dark{
+    width: 160px;
+    height: 800px;
+    border: 3px solid black;
+    border-radius: 50%;
+    background-color: #9b000a;
+    overflow: hidden;
+    position: relative;
+}
+
+.lowerlip-light{
+    position: absolute;
+    bottom: -145px;
+    left: calc(50% - 125px);
+    width: 250px;
+    height: 300px;
+    background-color: #ff458f;
+    border-radius: 50%;
+}
