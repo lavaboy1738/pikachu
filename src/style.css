@@ -19,7 +19,26 @@ body{
 .nose{
     position: absolute;
     left: calc(50% - 10px);
-    top: 30%;
+    top: 32%;
+}
+
+.nose:hover{
+    animation: shakeNose 0.1s infinite linear;
+    transform-origin: 50% 100%;
+}
+
+@keyframes shakeNose {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    50%{
+        transform: rotate(20deg);
+    }
+
+    100%{
+        transform: rotate(-20deg);
+    }
 }
 
 .triangle{
@@ -91,9 +110,6 @@ body{
     z-index: 2;
 }
 
-.upperlip{
-
-}
 
 .upperlip-left{
     width: 80px;
